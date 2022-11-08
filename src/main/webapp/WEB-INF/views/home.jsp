@@ -4,7 +4,6 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath}"></c:set>
-<title>글 목록 출력창</title>
 <!-- bootstrap css -->
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath }/resources/css/bootstrap.min.css">
@@ -12,22 +11,17 @@
 	href="${pageContext.request.contextPath }/resources/css/subway.css">
 <html>
 <head>
-<title>Home</title>
-<style>
-.train_info{
-	border : 1px solid black;
-	margin : 10px;
-}
-</style>
+<title>지하철 1호선 노선 검색</title>
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="/subway/resources/js/subway.js"></script>
 </head>
 <body>
 	<header>
-		<div>
-			<span>
+		<div class = "head_wrap">
+			<div>
+				<img alt="" id="img_logo" src="/subway/resources/image/subway_logo.png">
+			</div>		
 				<h1>1호선 노선 검색</h1>
-			</span>	
 		</div>
 	</header>
 

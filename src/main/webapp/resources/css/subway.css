@@ -2,8 +2,31 @@
 
 body{
 }
+.head_wrap{
+	border : 1px solid red;
+	max-width : 1100px;
+	display : flex;
+	margin : auto;
+	justify-content: space-between;
+}
+.head_wrap h1 {
+	border : 1px solid red;
+	margin : auto;
+}
+
+#img_logo{
+	width:150px;
+	height:150px;
+	margin-left :150px;
+}
 
 #subway_search {
+	border : 1px solid red;
 	max-width: 600px;
-	
+	margin : auto;
+}
+
+.train_info{
+	border : 1px solid black;
+	margin : 10px;
 }
