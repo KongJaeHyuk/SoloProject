@@ -21,9 +21,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * Handles requests for the application home page.
  */
 @Controller
-public class HomeController {
+public class SubwayController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(SubwayController.class);
 	
 	@Autowired
 	private SubwayDAO subwayDAO;
