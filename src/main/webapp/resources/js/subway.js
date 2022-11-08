@@ -4,7 +4,7 @@ $(function(){
 })
 
 function bind(){
-	$("#btn").off("click").on("click", fnBtnClick);
+	$("#btn_search").off("click").on("click", fnBtnClick);
 }
 
 function fnBtnClick(){
