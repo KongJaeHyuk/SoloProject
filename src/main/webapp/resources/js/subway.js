@@ -25,11 +25,13 @@ function fnBtnClick(){
 			for(let item of list){
 					html = "";
 					html += "<div class ='train_info'>";
-					html += "도착지 방면 : "+item.trainLineNm + "<br>";
-					html += "열차도착예정시간 : "+ item.barvlDt + "<br>";
-					html += "첫번째도착메세지 : "+ item.arvlMsg2 + "<br>";
-					html += "두번째도착메세지 : "+ item.arvlMsg3 + "<br>";
-					html += "</div>";
+					html += "<ul>";
+					html += "<li>" + "도착지 방면 : "+item.trainLineNm + "</li>";
+					html += "<li>" + "열차 도착 예정시간 : "+ item.barvlDt + "분" + "</li>";
+					html += "<li>" + "첫번째 도착메세지 : "+ item.arvlMsg2 + "</li>";
+					html += "<li>" + "두번째 도착메세지 : "+ item.arvlMsg3 + "</li>";
+					html += "</ul>";
+					html += "</div>" +"<br>";
 					
 					$("#info").append(html);
 			}

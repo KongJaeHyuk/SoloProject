@@ -16,6 +16,7 @@
 <script type="text/javascript" src="/subway/resources/js/subway.js"></script>
 </head>
 <body>
+	
 	<header>
 		<div class = "head_wrap">
 			<div>
@@ -24,13 +25,18 @@
 				<h1>1호선 노선 검색</h1>
 		</div>
 	</header>
-
-<div class="input-group mb-3" id = "subway_search">
-  <input type="text" class="form-control" id = "station" value = "서울" placeholder="지역을 입력하세요" aria-label="지역을 입력하세요" aria-describedby="button-addon2">
-  <button class="btn btn-outline-primary" type="button" id="btn_search">검색하기</button>
-</div>
-
-<div id = "info">
-</div>
+	
+	<article>
+		<div class="input-group mb-3" id = "subway_search">
+			<input type="text" class="form-control" id = "station" value = "서울" placeholder="지역을 입력하세요" aria-label="지역을 입력하세요" aria-describedby="button-addon2">
+			<button class="btn btn-outline-primary" type="button" id="btn_search">검색하기</button>
+		</div>
+	</article>
+	
+	<section>
+		<!-- 지하철 정보가 들어갈 div영역 -->
+		<div id = "info">
+		</div>
+	</section>
 </body>
 </html>

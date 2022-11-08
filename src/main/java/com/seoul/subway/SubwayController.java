@@ -42,12 +42,12 @@ public class SubwayController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "home";
+		return "subway";
 	}
 	
 	@RequestMapping(value = "/api/subway" , method = RequestMethod.POST)
-	@ResponseBody
-	public int addSubway(@RequestBody List<SubwayDTO> list, @ModelAttribute SubwayDTO dto) {
+	public@ResponseBody int addSubway(@RequestBody List<SubwayDTO> list, 
+										@ModelAttribute SubwayDTO dto) {
 		logger.info("api를 list로 받아온다");
 		System.out.println("list ==" + list);
 		System.out.println("list.size() == " + list.size());
